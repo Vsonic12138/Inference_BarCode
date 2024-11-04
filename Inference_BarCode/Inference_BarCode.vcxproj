@@ -79,12 +79,12 @@
     <LibraryPath>D:\System-default\DeskTop\Inference_BarCode\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\System-default\DeskTop\Inference_BarCode\include\MNN;D:\System-default\DeskTop\Inference_BarCode\include\opencv2;D:\System-default\DeskTop\Inference_BarCode\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\System-default\DeskTop\Inference_BarCode\lib\MD;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\DeskTop\Inference_BarCode\include\MNN;D:\DeskTop\Inference_BarCode\include\opencv2;D:\DeskTop\Inference_BarCode\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\DeskTop\Inference_BarCode\lib\release_MD;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\Administrator\Desktop\Inference_BarCode\include\opencv2;C:\Users\Administrator\Desktop\Inference_BarCode\include\MNN;C:\Users\Administrator\Desktop\Inference_BarCode\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Administrator\Desktop\Inference_BarCode\lib\release_MD;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\DeskTop\Inference_BarCode\include\opencv2;D:\DeskTop\Inference_BarCode\include\MNN;D:\DeskTop\Inference_BarCode\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\DeskTop\Inference_BarCode\lib\release_MD;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -126,7 +126,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>D:\System-default\DeskTop\Inference_BarCode\lib\MD\MNN.lib;D:\System-default\DeskTop\Inference_BarCode\lib\MD\opencv_world4100d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>MNN.lib;opencv_world4100.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -138,7 +138,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>D:\MyApplication\OCL_SDK_Light\include;C:\Users\Administrator\Desktop\Inference_BarCode\include\opencv2;C:\Users\Administrator\Desktop\Inference_BarCode\include\MNN;C:\Users\Administrator\Desktop\Inference_BarCode\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\DeskTop\Inference_BarCode\include\opencv2;D:\DeskTop\Inference_BarCode\include\MNN;D:\DeskTop\Inference_BarCode\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

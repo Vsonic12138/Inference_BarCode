@@ -14,8 +14,10 @@ lib文件夹当中缺少MNN.lib，见百度网盘链接：  [MNN.lib](https://pa
 
 # 二、运行步骤
 
-1、下载mnn.lib文件到 "lib->release_MD" 文件夹
+1、使用Visual Studio 2022 打开工程
 
-2、调整工程配置，选择release模式
+2、下载mnn.lib文件到 "lib->release_MD" 文件夹
 
-3、如果报错找不到 "opencl.lib",到 "工程属性->链接器->输入"，删掉opencl.lib即可。
+3、调整工程配置，选择release模式
+
+4、如果报错找不到 "opencl.lib",到 "工程属性->链接器->输入"，删掉opencl.lib即可。
